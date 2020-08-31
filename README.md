@@ -5,9 +5,7 @@ A TCP monitor
 
 ## Todo:
 
-[x] Basic structure and methods
-[x] Ping methods
-[ ] SQL integration
+- SQL integration
 
 ![Logo](monitorLogo.png)
 
