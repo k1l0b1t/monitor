@@ -5,7 +5,7 @@ A TCP monitor
 
 ## Todo:
 
-- SQL integration
+- MySQL integration
 
 ![Logo](monitorLogo.png)
 
