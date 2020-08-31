@@ -6,7 +6,7 @@ import java.net.UnknownHostException;
 
 /**
  * 
- * @author Vincent Lammens <vincent@vincentlammens.be>
+ * @author Vincent Lammens (vincent@vincentlammens.be)
  *
  */
 public class Monitor {

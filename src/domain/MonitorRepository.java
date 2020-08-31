@@ -9,7 +9,7 @@ import persistence.MonitorMapper;
 
 /**
  * 
- * @author Vincent Lammens <vincent@vincentlammens.be>
+ * @author Vincent Lammens (vincent@vincentlammens.be)
  *
  */
 public class MonitorRepository {
