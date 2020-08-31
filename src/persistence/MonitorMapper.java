@@ -1,19 +1,19 @@
 package persistence;
 
+import java.net.UnknownHostException;
+
 import domain.Monitor;
 
 public class MonitorMapper {
-
-	public MonitorMapper() {
+	
+	public Monitor[] listMonitors() throws UnknownHostException {
 		
-	}
-
-	public Monitor[] listMonitors() {
-		
-		Monitor[] monitors = {new Monitor("Test1","1.2.3.4"), new Monitor("Test2","1.2.3.4")};
+		Monitor[] monitors = {new Monitor("Test1","127.0.0.1"), new Monitor("Test2","10.0.0.255")}; // second monitor is offline
 		return monitors;
-		
-		
+				
 	}
+	
+	
+	
 	
 }
