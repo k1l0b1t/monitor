@@ -18,7 +18,7 @@ public class MonitorRepository {
 	/**
 	 * holds the monitor objects
 	 */
-	private Monitor[] monitors;
+	private List<Monitor> monitors;
 	
 	/**
 	 * Holds the monitor mapper object
@@ -59,12 +59,12 @@ public class MonitorRepository {
 	public boolean getMonitorStatus(String name) throws IOException {
 		//List<String> monitors = this.listMonitorNames();
 		boolean status = false;
-		for (int i = 0; i < this.monitors.length; i++) {
+		for (int i = 0; i < this.monitors.size(); i++) {
 			//System.out.println(this.monitors[i]);
-			if (this.monitors[i].getName().equals(name)) {
+			if (this.monitors.get(i).getName().equals(name)) {
 				// get status
 				
-				status = this.monitors[i].pingMonitor();
+				status = this.monitors.get(i).pingMonitor();
 			}
 		}
 		return status;
