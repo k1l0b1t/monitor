@@ -1,5 +1,5 @@
 /bin/
 monitor.cnf
 db.sql
-.gitignore
+.project
 .classpath
