@@ -72,7 +72,7 @@ public class MonitorMapper {
 	}
 	
 	public void updateMonitor(String name, boolean status) {
-		System.out.printf("[debug]: new status for %s is %s%n", name, status);
+		
 		try (Connection conn = DriverManager.getConnection(connectionString);
                 PreparedStatement query = conn.prepareStatement("update monitor set status="+status+" where name='"+name+"'")) {
                 query.executeUpdate();
