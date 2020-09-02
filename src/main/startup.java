@@ -36,9 +36,7 @@ public class startup {
 		// create new domain controller
 		DomainController dc = null;
 		dc = new DomainController();
-		
-		
-		
+				
 		List<String> monitors = null;
 		monitors = dc.listMonitorNames();
 		

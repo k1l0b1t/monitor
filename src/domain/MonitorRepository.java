@@ -67,7 +67,17 @@ public class MonitorRepository {
 				status = this.monitors.get(i).pingMonitor();
 			}
 		}
+		updateMonitorStatusInDatabase(name,status);
 		return status;
+	}
+	
+	/**
+	 * Update the status of a monitor in the database
+	 * @param name name of the monitor to update the status of
+	 * @param status new status of the monitor
+	 */
+	public void updateMonitorStatusInDatabase(String name, boolean status) {
+		mapper.updateMonitor(name,status);
 	}
 	
 }
