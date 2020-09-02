@@ -25,6 +25,23 @@ A MySQL/mariadb server
 3. edit the monitor.cnf file with the connection details
 4. run the jarfile with `java -jar monitor-mariadb-1.0.jar` (mariadb) or `java -jar monitor-mysql-1.0.jar`(mysql)
 
+## Adding monitors
+
+you add monitors by adding rows to the mysql database. Below is an example:
+
+```sql
+-- 'nuc' is the name, '10.0.0.27' is the ip
+insert into monitor.monitor(name,ip) values ('nuc','10.0.0.27');
+```
+
+## retrieving the status from the database
+
+just select the statuc collumn:
+
+```sql
+select name, status from monitor;
+```
+
 ## Docs of the domain package
 
 domain package api: <https://k1l0b1t.github.io/monitor/>
