@@ -1,11 +1,5 @@
 # monitor
-A TCP monitor
-
-**Still in development:** Currently the monitor works, but the database connection is not implemented yet. 
-
-## Todo:
-
-- MySQL integration
+A TCP monitor in java
 
 ![Logo](monitorLogo.png)
 
