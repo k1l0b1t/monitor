@@ -33,13 +33,13 @@ public class MonitorMapper {
 		while (file.hasNext()) {
 			String[] tokens = file.next().split("=");
 			//System.out.printf("%s:%s%n",tokens[0], tokens[1]);
-			if (tokens[0].equals("server")) {
+			if (tokens[0].equals("dbserver")) {
 				server = tokens[1];
-			} else if (tokens[0].equals("user")) {
+			} else if (tokens[0].equals("dbuser")) {
 				user = tokens[1];
-			} else if (tokens[0].equals("password")) {
+			} else if (tokens[0].equals("dbpassword")) {
 				password = tokens[1];
-			}else if (tokens[0].equals("database")) {
+			}else if (tokens[0].equals("dbname")) {
 				database = tokens[1];
 			}
 		}

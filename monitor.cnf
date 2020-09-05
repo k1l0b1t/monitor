@@ -1,4 +1,4 @@
-server=localhost
-user=root
-password=root
-database=monitor
+dbserver=localhost
+dbuser=root
+dbpassword=root
+dbname=monitor
