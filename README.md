@@ -48,3 +48,9 @@ domain package api: <https://k1l0b1t.github.io/monitor/>
 
 ## Licence
 Licence: GPLv3
+
+## Future features:
+
+- E-mail notifications (optional, will use SMTP)
+- SQLite Storage
+- Interactive installer (will populate database for you and write config file.
