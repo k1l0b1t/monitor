@@ -20,7 +20,7 @@ A MySQL/mariadb server
 
 ### Using a pre-compiled jar
 
-1. [Download](https://files.vincentlammens.be/software/monitor/) & extract the pre-compiled jarfile (in a .tar.gz archive with monitor.cnf and db.sql)
+1. [Download](https://github.com/k1l0b1t/monitor/releases/tag/v1.0.0) & extract the pre-compiled jarfile (in a .tar.gz archive with monitor.cnf and db.sql)
 2. create a database and populate with db.sql
 3. edit the monitor.cnf file with the connection details
 4. run the jarfile with `java -jar monitor-mariadb-1.0.jar` (mariadb) or `java -jar monitor-mysql-1.0.jar`(mysql)
